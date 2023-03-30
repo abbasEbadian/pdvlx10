@@ -224,7 +224,8 @@ const removeFromCart = (productName) => {
 }
 
 const clearBasket = (productName) => {
-  cart.items.length = 0
+  cart.items.length =
+  updateLocalStorage(cart);
   renderCartItems()
 }
 
