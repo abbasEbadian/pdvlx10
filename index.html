@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta charset="UTF-8">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="./styles/bootstrap.min.css" />
+    <link rel="stylesheet" href="./styles/main.css" />
+  </head>
+  <body>
+    <div class="container">
+	
+      <div class="row">
+        <div class="col-md-12">
+          <div class="products"></div>
+        </div>
+      </div>
+	  
+      <div class="row">
+        <div class="col-md-12">
+          <div class="cart">
+            <h2 class="cart__title">سبد خرید</h2>
+            <div class="cart__line"></div>
+            <div class="cart__items"></div>
+			
+			
+		  <div class="row">
+			<div class="col-md-12">
+			  <button class="cart__item-warning" onclick="clearBasket()">خالی کردن سبد</button>
+			  <button class="cart__item-success" onclick="soldOut()">پرداخت و تسویه</button>	  
+			</div>
+		  </div>  
+            <h4 class="cart__title">مبلغ قابل پرداخت <div class="row cart__total-price"></div></h4>
+          </div>
+        </div>
+      </div>
+	  
+    </div>
+    <script src="./app.js"></script>
+  </body>
+</html>
